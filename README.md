@@ -1,36 +1,75 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Smart Resume Scanner + ATS Analyzer
 
-## Getting Started
+A full-stack web application that allows users to upload PDF resumes and compare them against job descriptions using a custom ATS (Applicant Tracking System) scoring engine.
 
-First, run the development server:
+## Features
+
+- Upload PDF resumes
+- Extract text from resumes
+- Paste job descriptions
+- Generate ATS match scores
+- Detect missing keywords
+- Display matched skills and resume insights
+- Full frontend ↔ backend integration
+
+## Tech Stack
+
+- Next.js
+- React
+- TypeScript
+- Node.js
+- API Routes
+- PDF parsing
+- Tailwind CSS
+
+## How It Works
+
+1. User uploads a PDF resume
+2. Resume text is extracted
+3. User pastes a job description
+4. ATS scoring analyzes:
+   - keyword matches
+   - missing keywords
+   - match percentage
+5. Results are displayed in the UI
+
+## Installation
+
+Clone the repository:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/JacobGomez1/smart-resume-scanner.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Install dependencies:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+pnpm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Run development server:
 
-## Learn More
+```bash
+pnpm dev
+```
 
-To learn more about Next.js, take a look at the following resources:
+Open:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+http://localhost:3000
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Future Improvements
 
-## Deploy on Vercel
+- AI-generated resume suggestions
+- Smarter ATS scoring algorithms
+- Skill extraction
+- Resume rewrite recommendations
+- Charts and visual analytics
+- User dashboard/history
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Project Status
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+In active development.
+
+Current version includes working resume upload, text extraction, and ATS analysis.
